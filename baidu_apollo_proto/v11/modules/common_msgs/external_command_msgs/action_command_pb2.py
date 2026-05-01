@@ -1,0 +1,33 @@
+"""Generated protocol buffer code."""
+from google.protobuf.internal import enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import descriptor_pool as _descriptor_pool
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from ....modules.common_msgs.basic_msgs import header_pb2 as modules_dot_common__msgs_dot_basic__msgs_dot_header__pb2
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n>modules/common_msgs/external_command_msgs/action_command.proto\x12\x17apollo.external_command\x1a+modules/common_msgs/basic_msgs/header.proto"\x8b\x01\n\rActionCommand\x12%\n\x06header\x18\x01 \x01(\x0b2\x15.apollo.common.Header\x12\x16\n\ncommand_id\x18\x02 \x01(\x03:\x02-1\x12;\n\x07command\x18\x03 \x02(\x0e2*.apollo.external_command.ActionCommandType*\xd6\x01\n\x11ActionCommandType\x12\n\n\x06FOLLOW\x10\x01\x12\x0f\n\x0bCHANGE_LEFT\x10\x02\x12\x10\n\x0cCHANGE_RIGHT\x10\x03\x12\r\n\tPULL_OVER\x10\x04\x12\x08\n\x04STOP\x10\x05\x12\t\n\x05START\x10\x06\x12\x12\n\x0eCLEAR_PLANNING\x10\x07\x12\x14\n\x10SWITCH_TO_MANUAL\x102\x12\x12\n\x0eSWITCH_TO_AUTO\x103\x12\x0b\n\x07VIN_REQ\x104\x12\x11\n\rENTER_MISSION\x105\x12\x10\n\x0cEXIT_MISSION\x106')
+_ACTIONCOMMANDTYPE = DESCRIPTOR.enum_types_by_name['ActionCommandType']
+ActionCommandType = enum_type_wrapper.EnumTypeWrapper(_ACTIONCOMMANDTYPE)
+FOLLOW = 1
+CHANGE_LEFT = 2
+CHANGE_RIGHT = 3
+PULL_OVER = 4
+STOP = 5
+START = 6
+CLEAR_PLANNING = 7
+SWITCH_TO_MANUAL = 50
+SWITCH_TO_AUTO = 51
+VIN_REQ = 52
+ENTER_MISSION = 53
+EXIT_MISSION = 54
+_ACTIONCOMMAND = DESCRIPTOR.message_types_by_name['ActionCommand']
+ActionCommand = _reflection.GeneratedProtocolMessageType('ActionCommand', (_message.Message,), {'DESCRIPTOR': _ACTIONCOMMAND, '__module__': 'modules.common_msgs.external_command_msgs.action_command_pb2'})
+_sym_db.RegisterMessage(ActionCommand)
+if _descriptor._USE_C_DESCRIPTORS == False:
+    DESCRIPTOR._options = None
+    _ACTIONCOMMANDTYPE._serialized_start = 279
+    _ACTIONCOMMANDTYPE._serialized_end = 493
+    _ACTIONCOMMAND._serialized_start = 137
+    _ACTIONCOMMAND._serialized_end = 276

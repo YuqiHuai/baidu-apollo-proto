@@ -1,0 +1,23 @@
+"""Generated protocol buffer code."""
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import descriptor_pool as _descriptor_pool
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from google.protobuf import any_pb2 as google_dot_protobuf_dot_any__pb2
+from ....modules.common_msgs.basic_msgs import header_pb2 as modules_dot_common__msgs_dot_basic__msgs_dot_header__pb2
+from ....modules.common_msgs.routing_msgs import routing_pb2 as modules_dot_common__msgs_dot_routing__msgs_dot_routing__pb2
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n8modules/common_msgs/planning_msgs/planning_command.proto\x12\x0fapollo.planning\x1a\x19google/protobuf/any.proto\x1a+modules/common_msgs/basic_msgs/header.proto\x1a.modules/common_msgs/routing_msgs/routing.proto"f\n\x0eParkingCommand\x12%\n\x06header\x18\x01 \x01(\x0b2\x15.apollo.common.Header\x12\x17\n\x0fparking_spot_id\x18\x02 \x02(\t\x12\x14\n\x0ctarget_speed\x18\x03 \x01(\x01"\xbd\x02\n\x0fPlanningCommand\x12%\n\x06header\x18\x01 \x01(\x0b2\x15.apollo.common.Header\x12\x16\n\ncommand_id\x18\x02 \x01(\x03:\x02-1\x12<\n\x13lane_follow_command\x18\x03 \x01(\x0b2\x1f.apollo.routing.RoutingResponse\x12\x14\n\x0ctarget_speed\x18\x04 \x01(\x01\x12 \n\x11is_motion_command\x18\x05 \x01(\x08:\x05false\x12:\n\x0fparking_command\x18\x06 \x01(\x0b2\x1f.apollo.planning.ParkingCommandH\x00\x12.\n\x0ecustom_command\x18\x07 \x01(\x0b2\x14.google.protobuf.AnyH\x00B\t\n\x07command')
+_PARKINGCOMMAND = DESCRIPTOR.message_types_by_name['ParkingCommand']
+_PLANNINGCOMMAND = DESCRIPTOR.message_types_by_name['PlanningCommand']
+ParkingCommand = _reflection.GeneratedProtocolMessageType('ParkingCommand', (_message.Message,), {'DESCRIPTOR': _PARKINGCOMMAND, '__module__': 'modules.common_msgs.planning_msgs.planning_command_pb2'})
+_sym_db.RegisterMessage(ParkingCommand)
+PlanningCommand = _reflection.GeneratedProtocolMessageType('PlanningCommand', (_message.Message,), {'DESCRIPTOR': _PLANNINGCOMMAND, '__module__': 'modules.common_msgs.planning_msgs.planning_command_pb2'})
+_sym_db.RegisterMessage(PlanningCommand)
+if _descriptor._USE_C_DESCRIPTORS == False:
+    DESCRIPTOR._options = None
+    _PARKINGCOMMAND._serialized_start = 197
+    _PARKINGCOMMAND._serialized_end = 299
+    _PLANNINGCOMMAND._serialized_start = 302
+    _PLANNINGCOMMAND._serialized_end = 619

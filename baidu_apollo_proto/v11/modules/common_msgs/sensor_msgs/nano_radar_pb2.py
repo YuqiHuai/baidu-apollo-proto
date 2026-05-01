@@ -1,0 +1,47 @@
+"""Generated protocol buffer code."""
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import descriptor_pool as _descriptor_pool
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from ....modules.common_msgs.basic_msgs import header_pb2 as modules_dot_common__msgs_dot_basic__msgs_dot_header__pb2
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0modules/common_msgs/sensor_msgs/nano_radar.proto\x12\x0eapollo.drivers\x1a+modules/common_msgs/basic_msgs/header.proto"g\n\x18NanoObjectListStatus_60A\x12\x16\n\x0bnof_objects\x18\x01 \x01(\x05:\x010\x12\x18\n\x0cmeas_counter\x18\x02 \x01(\x05:\x02-1\x12\x19\n\x11interface_version\x18\x03 \x01(\x05"\xcf\x03\n\x12NanoRadarState_201\x12\x14\n\x0cmax_distance\x18\x01 \x01(\r\x12\x13\n\x0bradar_power\x18\x02 \x01(\r\x12B\n\x0boutput_type\x18\x03 \x01(\x0e2-.apollo.drivers.NanoRadarState_201.OutputType\x12F\n\rrcs_threshold\x18\x04 \x01(\x0e2/.apollo.drivers.NanoRadarState_201.RcsThreshold\x12\x14\n\x0csend_quality\x18\x05 \x01(\x08\x12\x15\n\rsend_ext_info\x18\x06 \x01(\x08"l\n\nOutputType\x12\x14\n\x10OUTPUT_TYPE_NONE\x10\x00\x12\x17\n\x13OUTPUT_TYPE_OBJECTS\x10\x01\x12\x18\n\x14OUTPUT_TYPE_CLUSTERS\x10\x02\x12\x15\n\x11OUTPUT_TYPE_ERROR\x10\x03"g\n\x0cRcsThreshold\x12\x1a\n\x16RCS_THRESHOLD_STANDARD\x10\x00\x12"\n\x1eRCS_THRESHOLD_HIGH_SENSITIVITY\x10\x01\x12\x17\n\x13RCS_THRESHOLD_ERROR\x10\x02"k\n\x17NanoSoftwareVersion_700\x12\x1a\n\x12soft_major_release\x18\x01 \x01(\r\x12\x1a\n\x12soft_minor_release\x18\x02 \x01(\r\x12\x18\n\x10soft_patch_level\x18\x03 \x01(\r"\xf5\x01\n%NanoCollisionDetectionRegionState_402\x12\x11\n\tregion_id\x18\x01 \x01(\r\x12 \n\x18region_max_output_number\x18\x02 \x01(\r\x12\x18\n\x10point1_longitude\x18\x03 \x01(\x01\x12\x16\n\x0epoint1_lateral\x18\x04 \x01(\x01\x12\x18\n\x10point2_longitude\x18\x05 \x01(\x01\x12\x16\n\x0epoint2_lateral\x18\x06 \x01(\x01\x12\x19\n\x11coordinates_valid\x18\x07 \x01(\x08\x12\x18\n\x10activation_valid\x18\x08 \x01(\x08"\x86\x05\n\x0cNanoRadarObs\x12%\n\x06header\x18\x01 \x01(\x0b2\x15.apollo.common.Header\x12\x16\n\x0eclusterortrack\x18\x02 \x01(\x08\x12\x13\n\x0bobstacle_id\x18\x03 \x01(\x05\x12\x16\n\x0elongitude_dist\x18\x04 \x01(\x01\x12\x14\n\x0clateral_dist\x18\x05 \x01(\x01\x12\x15\n\rlongitude_vel\x18\x06 \x01(\x01\x12\x13\n\x0blateral_vel\x18\x07 \x01(\x01\x12\x0b\n\x03rcs\x18\x08 \x01(\x01\x12\x0f\n\x07dynprop\x18\t \x01(\x05\x12\x1a\n\x12longitude_dist_rms\x18\n \x01(\x01\x12\x18\n\x10lateral_dist_rms\x18\x0b \x01(\x01\x12\x19\n\x11longitude_vel_rms\x18\x0c \x01(\x01\x12\x17\n\x0flateral_vel_rms\x18\r \x01(\x01\x12\x11\n\tprobexist\x18\x0e \x01(\x01\x12\x12\n\nmeas_state\x18\x0f \x01(\x05\x12\x17\n\x0flongitude_accel\x18\x10 \x01(\x01\x12\x15\n\rlateral_accel\x18\x11 \x01(\x01\x12\x17\n\x0foritation_angle\x18\x12 \x01(\x01\x12\x1b\n\x13longitude_accel_rms\x18\x13 \x01(\x01\x12\x19\n\x11lateral_accel_rms\x18\x14 \x01(\x01\x12\x1b\n\x13oritation_angle_rms\x18\x15 \x01(\x01\x12\x0e\n\x06length\x18\x16 \x01(\x01\x12\r\n\x05width\x18\x17 \x01(\x01\x12\x16\n\x0eobstacle_class\x18\x18 \x01(\x05\x12\x16\n\x0eobstacle_range\x18\x19 \x01(\x01\x12\x14\n\x0cobstacle_vel\x18\x1a \x01(\x01\x12\x16\n\x0eobstacle_angle\x18\x1b \x01(\x01"\xf7\x02\n\tNanoRadar\x12%\n\x06header\x18\x01 \x01(\x0b2\x15.apollo.common.Header\x12.\n\x08contiobs\x18\x02 \x03(\x0b2\x1c.apollo.drivers.NanoRadarObs\x127\n\x0bradar_state\x18\x03 \x01(\x0b2".apollo.drivers.NanoRadarState_201\x12Q\n\x12radar_region_state\x18\x04 \x01(\x0b25.apollo.drivers.NanoCollisionDetectionRegionState_402\x12D\n\x12object_list_status\x18\x06 \x01(\x0b2(.apollo.drivers.NanoObjectListStatus_60A\x12A\n\x10software_version\x18\x07 \x01(\x0b2\'.apollo.drivers.NanoSoftwareVersion_700')
+_NANOOBJECTLISTSTATUS_60A = DESCRIPTOR.message_types_by_name['NanoObjectListStatus_60A']
+_NANORADARSTATE_201 = DESCRIPTOR.message_types_by_name['NanoRadarState_201']
+_NANOSOFTWAREVERSION_700 = DESCRIPTOR.message_types_by_name['NanoSoftwareVersion_700']
+_NANOCOLLISIONDETECTIONREGIONSTATE_402 = DESCRIPTOR.message_types_by_name['NanoCollisionDetectionRegionState_402']
+_NANORADAROBS = DESCRIPTOR.message_types_by_name['NanoRadarObs']
+_NANORADAR = DESCRIPTOR.message_types_by_name['NanoRadar']
+_NANORADARSTATE_201_OUTPUTTYPE = _NANORADARSTATE_201.enum_types_by_name['OutputType']
+_NANORADARSTATE_201_RCSTHRESHOLD = _NANORADARSTATE_201.enum_types_by_name['RcsThreshold']
+NanoObjectListStatus_60A = _reflection.GeneratedProtocolMessageType('NanoObjectListStatus_60A', (_message.Message,), {'DESCRIPTOR': _NANOOBJECTLISTSTATUS_60A, '__module__': 'modules.common_msgs.sensor_msgs.nano_radar_pb2'})
+_sym_db.RegisterMessage(NanoObjectListStatus_60A)
+NanoRadarState_201 = _reflection.GeneratedProtocolMessageType('NanoRadarState_201', (_message.Message,), {'DESCRIPTOR': _NANORADARSTATE_201, '__module__': 'modules.common_msgs.sensor_msgs.nano_radar_pb2'})
+_sym_db.RegisterMessage(NanoRadarState_201)
+NanoSoftwareVersion_700 = _reflection.GeneratedProtocolMessageType('NanoSoftwareVersion_700', (_message.Message,), {'DESCRIPTOR': _NANOSOFTWAREVERSION_700, '__module__': 'modules.common_msgs.sensor_msgs.nano_radar_pb2'})
+_sym_db.RegisterMessage(NanoSoftwareVersion_700)
+NanoCollisionDetectionRegionState_402 = _reflection.GeneratedProtocolMessageType('NanoCollisionDetectionRegionState_402', (_message.Message,), {'DESCRIPTOR': _NANOCOLLISIONDETECTIONREGIONSTATE_402, '__module__': 'modules.common_msgs.sensor_msgs.nano_radar_pb2'})
+_sym_db.RegisterMessage(NanoCollisionDetectionRegionState_402)
+NanoRadarObs = _reflection.GeneratedProtocolMessageType('NanoRadarObs', (_message.Message,), {'DESCRIPTOR': _NANORADAROBS, '__module__': 'modules.common_msgs.sensor_msgs.nano_radar_pb2'})
+_sym_db.RegisterMessage(NanoRadarObs)
+NanoRadar = _reflection.GeneratedProtocolMessageType('NanoRadar', (_message.Message,), {'DESCRIPTOR': _NANORADAR, '__module__': 'modules.common_msgs.sensor_msgs.nano_radar_pb2'})
+_sym_db.RegisterMessage(NanoRadar)
+if _descriptor._USE_C_DESCRIPTORS == False:
+    DESCRIPTOR._options = None
+    _NANOOBJECTLISTSTATUS_60A._serialized_start = 113
+    _NANOOBJECTLISTSTATUS_60A._serialized_end = 216
+    _NANORADARSTATE_201._serialized_start = 219
+    _NANORADARSTATE_201._serialized_end = 682
+    _NANORADARSTATE_201_OUTPUTTYPE._serialized_start = 469
+    _NANORADARSTATE_201_OUTPUTTYPE._serialized_end = 577
+    _NANORADARSTATE_201_RCSTHRESHOLD._serialized_start = 579
+    _NANORADARSTATE_201_RCSTHRESHOLD._serialized_end = 682
+    _NANOSOFTWAREVERSION_700._serialized_start = 684
+    _NANOSOFTWAREVERSION_700._serialized_end = 791
+    _NANOCOLLISIONDETECTIONREGIONSTATE_402._serialized_start = 794
+    _NANOCOLLISIONDETECTIONREGIONSTATE_402._serialized_end = 1039
+    _NANORADAROBS._serialized_start = 1042
+    _NANORADAROBS._serialized_end = 1688
+    _NANORADAR._serialized_start = 1691
+    _NANORADAR._serialized_end = 2066
