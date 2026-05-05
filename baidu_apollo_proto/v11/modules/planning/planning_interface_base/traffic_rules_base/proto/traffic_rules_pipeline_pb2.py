@@ -1,0 +1,16 @@
+"""Generated protocol buffer code."""
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import descriptor_pool as _descriptor_pool
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from ......modules.planning.planning_base.proto import plugin_declare_info_pb2 as modules_dot_planning_dot_planning__base_dot_proto_dot_plugin__declare__info__pb2
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n^modules/planning/planning_interface_base/traffic_rules_base/proto/traffic_rules_pipeline.proto\x12\x0fapollo.planning\x1a>modules/planning/planning_base/proto/plugin_declare_info.proto"H\n\x14TrafficRulesPipeline\x120\n\x04rule\x18\x01 \x03(\x0b2".apollo.planning.PluginDeclareInfo')
+_TRAFFICRULESPIPELINE = DESCRIPTOR.message_types_by_name['TrafficRulesPipeline']
+TrafficRulesPipeline = _reflection.GeneratedProtocolMessageType('TrafficRulesPipeline', (_message.Message,), {'DESCRIPTOR': _TRAFFICRULESPIPELINE, '__module__': 'modules.planning.planning_interface_base.traffic_rules_base.proto.traffic_rules_pipeline_pb2'})
+_sym_db.RegisterMessage(TrafficRulesPipeline)
+if _descriptor._USE_C_DESCRIPTORS == False:
+    DESCRIPTOR._options = None
+    _TRAFFICRULESPIPELINE._serialized_start = 179
+    _TRAFFICRULESPIPELINE._serialized_end = 251
